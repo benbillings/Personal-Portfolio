@@ -1,0 +1,67 @@
+:root {
+    --blue: #274472;
+    --white: #fff;
+}
+/* universal selector */
+* {
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+main {
+    background-color: var(--blue);
+}
+
+/* header */
+nav,
+ul,
+footer {
+    background-color: var(--white);
+    margin: 0 5%;
+    
+}
+
+ul {
+    position: relative;
+    float: right;
+    width: fit-content;
+
+}
+
+li {
+    background-color: var(--white);
+    display: inline-block;
+    margin: 0 20px;
+    width: fit-content;
+}
+
+li a {
+    background-color: var(--white);
+    color: #030303;
+    text-decoration: none;
+}
+
+img.namelogo {
+    width: 25%;
+    height: auto;
+    position: relative;
+    left: 3%;
+    margin: 8px;
+}
+
+
+
+/* classes */
+.centertext {
+    text-align: center;
+}
+
+.righttext {
+    text-align: right;
+}
+
+/* imgages */
+#me {
+    width: 250px;
+    height: auto;
+}

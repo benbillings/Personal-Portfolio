@@ -1,29 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
     
+<!--GIVEN I need to sample a potential employee's previous work
+    WHEN I load their portfolio
+    THEN I am presented with the developer's name, a recent photo or avatar, and links to sections 
+    about them, their work, and how to contact them
+    WHEN I click one of the links in the navigation
+    THEN the UI scrolls to the corresponding section
+    WHEN I click on the link to the section about their work
+    THEN the UI scrolls to a section with titled images of the developer's applications
+    WHEN I am presented with the developer's first application
+    THEN that application's image should be larger in size than the others
+    WHEN I click on the images of the applications
+    THEN I am taken to that deployed application
+    WHEN I resize the page or view the site on various screens and devices
+    THEN I am presented with a responsive layout that adapts to my viewport -->
+
+
     <head>
         <meta charset="UTF-8">
         <title>Ben Billings</title>
-        <!-- links to stylesheets go here -->
+        <link rel="stylesheet" href="./assets/reset.css">
+        <link rel="stylesheet" href="./assets/style.css">
     </head>
 
     <body>
 
-        <header>
             <nav>
-
-            </nav>
-        </header>
+                <img class="namelogo" src="./assets/images/namelogo.png" alt="Ben Billings Web Development logo">
+                <ul class="righttext">
+                    <!-- each li links to respective section -->
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html#aboutme">About me</a></li>
+                    <li><a href="./index.html.mywork">My work</a></li>
+                    <li><a href="./index.html.contact">Contact</a></li>
+                </ul>
+            </nav>    
 
         <main>
+            
             <section class="topmain">
-
+                <img id="me" src="./assets/images/me.jpeg">
+                <h1>Ben Billings</h1>
+                <p>Web Development</p>
             </section>
             
             
             
-            <section class="aboutme">
+            <section id="aboutme">
+                <h1>About me</h1>
+                
+                <h2>Background</h2>
+                <p>Hello! My name is Ben Billings. I am 20 years old, live in Columbus, Ohio, and am an 
+                aspiring web developer. I currently work at a restaurant in town as a food runner and 
+                host; I also work for Search2Close, a title company, as a recording specialist.
+                I am studying web development through the Vanderbilt University Coding Bootcamp. 
+                You can find <a href="./index.html.mywork">my work</a> below as well as my 
+                <a href="./index.html.contact">contact</a> information.</p>
 
+                <h2>My goals</h2>
+                <p>When I graduated high school in 2020, I didn't have much of a plan for my future.
+                I attended the University of Southern California for one year, where I was studying
+                economics. However, I was feeling unfulfilled, and decided to leave school to pursue
+                other opportunities. Coding was of interest to me because I am typically a logical 
+                thinker, and I love problem solving. I also love the idea of being able to create 
+                something, so web development seems like the perfect fit for me!
+                </p>
             </section>
 
             
@@ -37,11 +79,12 @@
             <section class="contact">
 
             </section>
+        
         </main>
 
         <footer>
-            <h3>Thank you for visiting my portfolio!</h3>
-            <p>Click <a href="index.html">here</a> to head back to the top.</p>
+            <h3 class="centertext">Thank you for visiting my portfolio!</h3>
+            <p class="centertext">Click <a href="index.html">here</a> to head back to the top.</p>
         </footer>
  
     </body>
