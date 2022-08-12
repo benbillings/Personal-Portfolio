@@ -25,4 +25,4 @@ My purpose with the project was not only to create a professional portfolio that
 
 ## Below is a screenshot of the deployed application:
 
-<img src="./images/screenshot.png">
+<img src="./assets/images/screenshot.png">
