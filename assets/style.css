@@ -19,7 +19,7 @@ nav,
 ul,
 footer {
     background-color: var(--white);
-    margin: 0 13%;
+    margin: 0px 12% 10px;
     
 }
 
@@ -31,6 +31,8 @@ nav {
     border-left: #030303 solid 15px;
     border-right: #030303 solid 15px;
     border-radius: 25px;
+    position: fixed;
+    z-index: 1;
 }
 
 ul {
@@ -39,7 +41,7 @@ ul {
     align-items: flex-end;
     padding: 10px;
     margin: 0;
-    border: white;
+    border: var(--white);
     border-radius: 25px;
 }
 
@@ -74,10 +76,64 @@ nav a:hover {
 }
 
 
+/* main content */
+.maincontent {
+    border: black dashed 5px;
+    padding: 2%;
+    margin: 0% 8% 2%;
+    height: 480px;
+}
 
+main, footer {
+    position: relative;
+    top: 140px;
+}
 
+.maincontent:hover {
+    box-shadow: 2px 2px 50px 12px var(--black);
+}
 
+/* first section, picture, name and title */
+#topcontent h1, p img {
+    display: inline-block;
+}
 
+#topcontent h1 {
+    font-size: 250%;
+    font-family: 'Playfair Display', 'Courier New', Courier, monospace;
+    margin: 1%;
+}
+
+#topcontent p {
+    font-size: 150%;
+    font-family: 'Fairplay Display', 'Courier New', Courier, monospace;
+    margin: 1%;
+}
+
+#topcontent {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+/* about me section */
+#aboutme {
+    line-height: 2em;
+    padding: 3%;
+}
+
+#aboutme h1 {
+    font-size: 2.0em;
+    border-bottom: var(--white) 2px solid;
+    padding-bottom: 1%;
+}
+
+#aboutme h2 {
+    font-size: 1.5em;
+    padding: 1% 0;
+}
+
+ 
 
 
 /* classes */
@@ -88,6 +144,9 @@ nav a:hover {
 
 /* imgages */
 #me {
-    width: 250px;
+    width: 35%;
     height: auto;
+    margin-left: 2%;
+    border: 4px var(--black) solid;
+    border-radius: 25px;
 }
