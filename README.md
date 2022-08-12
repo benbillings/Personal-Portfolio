@@ -1,6 +1,7 @@
 # Personal-Portfolio
 
 ## Deployed Application Link:
+https://benbillings.github.io/Personal-Portfolio/index.html#mywork
 
 ## Purpose
 
@@ -23,3 +24,5 @@ My purpose with the project was not only to create a professional portfolio that
 - The page is responsive to some degree, but does not function properly on small screens such as a phone or tablet (this is my next priority)
 
 ## Below is a screenshot of the deployed application:
+
+<img src="./images/screenshot.png">
