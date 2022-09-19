@@ -99,8 +99,9 @@ main, footer {
 }
 
 /* first section, picture, name and title */
-#topcontent h1, p img {
-    display: inline-block;
+#topcontent div {
+    flex
+
 }
 
 #topcontent h1 {
@@ -119,6 +120,15 @@ main, footer {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+}
+
+/* imgage of me */
+#me {
+    width: 35%;
+    height: auto;
+    margin-left: 2%;
+    border: 4px var(--black) solid;
+    border-radius: 25px;
 }
 
 /* about me section */
@@ -147,10 +157,17 @@ main, footer {
 }
 
 #mywork h1 {
-    display: inline-block;
     font-size: 2em;
     margin-bottom: .5%;
     width: fit-content;
+    border-bottom: var(--white) solid 2px;
+}
+
+#mywork h1 a {
+    font-size: 1em;
+    margin-bottom: .5%;
+    width: fit-content;
+    border-bottom: var(--white) solid 2px;
 }
 
 #mywork h1:hover {
@@ -206,11 +223,3 @@ main, footer {
 
 
 
-/* imgages */
-#me {
-    width: 35%;
-    height: auto;
-    margin-left: 2%;
-    border: 4px var(--black) solid;
-    border-radius: 25px;
-}
