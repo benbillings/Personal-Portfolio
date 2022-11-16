@@ -21,7 +21,7 @@ main {
 
 /* header */
 nav,
-ul,
+ul.nav,
 footer {
     background-color: var(--white);
     margin: 0px 12% 10px;
@@ -40,7 +40,7 @@ nav {
     z-index: 1;
 }
 
-ul {
+ul.nav {
     display: flex;
     flex-flow: row nowrap;
     align-items: flex-end;
@@ -50,13 +50,13 @@ ul {
     border-radius: 25px;
 }
 
-li {
+li.nav {
     background-color: var(--white);
     display: inline-block;
     margin: 0 20px;
 }
 
-li a {
+li.nav a {
     background-color: var(--white);
     color: #030303;
     text-decoration: none;
@@ -99,10 +99,7 @@ main, footer {
 }
 
 /* first section, picture, name and title */
-#topcontent div {
-    flex
 
-}
 
 #topcontent h1 {
     font-size: 250%;
@@ -124,7 +121,7 @@ main, footer {
 
 /* imgage of me */
 #me {
-    width: 35%;
+    width: 30%;
     height: auto;
     margin-left: 2%;
     border: 4px var(--black) solid;
@@ -138,7 +135,7 @@ main, footer {
     height: auto;
 }
 
-#aboutme h1 {
+#aboutme h1, #mywork h1 {
     font-size: 2.0em;
     border-bottom: var(--white) 2px solid;
     padding-bottom: 1%;
@@ -149,36 +146,22 @@ main, footer {
     padding: 1% 0;
 }
 
-/* my work section */
-#mywork {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
-}
-
+/* my work */
 #mywork h1 {
     font-size: 2em;
-    margin-bottom: .5%;
-    width: fit-content;
-    border-bottom: var(--white) solid 2px;
 }
 
-#mywork h1 a {
-    font-size: 1em;
-    margin-bottom: .5%;
-    width: fit-content;
-    border-bottom: var(--white) solid 2px;
+ul.work-list {
+    list-style-type: circle;
 }
 
-#mywork h1:hover {
-    font-weight: bolder;
-    cursor: pointer;
-    text-shadow: 5px 5px 5px var(--black);
+li.work-list {
+    margin: 2%;
+    font-size: 1.5em;
 }
 
-#mywork .hublink {
-    width: 60%;
-    text-decoration: none;
+#mywork {
+    height: fit-content;
 }
 
 #github {
